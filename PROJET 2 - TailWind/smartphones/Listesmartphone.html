@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liste des Smartphones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <header class="bg-blue-600 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Gestion de Smartphones</h1>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="./Ajoutersmartphone.html" class="hover:underline">Ajouter</a></li>
+          <li><a href="./Listesmartphone.html" class="hover:underline">Liste Smartphones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto mt-8 px-4">
+    <h2 class="text-xl font-semibold mb-6">Liste des Smartphones</h2>
+
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <a href="detailIphone.html" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="../images/iphone14.webp" alt="iPhone 14" class="w-full h-48 object-cover mb-2 rounded" />
+        <h3 class="text-lg font-semibold">iPhone 14</h3>
+        <p class="text-gray-500">Apple</p>
+      </a>
+
+      <a href="detailSamsung.html" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="../images/samsung.webp" alt="Samsung" class="w-full h-48 object-cover mb-2 rounded" />
+        <h3 class="text-lg font-semibold">Samsung Galaxy</h3>
+        <p class="text-gray-500">Samsung</p>
+      </a>
+
+      <a href="detailXiaomi.html" class="block bg-white p-4 rounded shadow hover:shadow-lg transition">
+        <img src="../images/xiaomi.png" alt="Xiaomi" class="w-full h-48 object-cover mb-2 rounded" />
+        <h3 class="text-lg font-semibold">Xiaomi 12</h3>
+        <p class="text-gray-500">Xiaomi</p>
+      </a>
+    </div>
+  </main>
+
+</body>
+<footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#" class="hover:underline">Groupe1.odc</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact: 33 xxx xxx xxx</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+</html>
