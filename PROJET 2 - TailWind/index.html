@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajouter un Smartphone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <header class="bg-blue-600 text-white py-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Gestion de Smartphones</h1>
+      <nav>
+        <ul class="flex gap-4">
+          <li><a href="./Ajoutersmartphone.html" class="hover:underline hover:red-100">Ajouter</a></li>
+          <li><a href="./Listesmartphone.html" class="hover:underline">Liste Smartphones</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container mx-auto mt-8 p-6 bg-white shadow-md rounded-lg">
+    <h2 class="text-xl font-semibold mb-6">Ajouter un smartphone</h2>
+
+    <form class="space-y-4">
+      <div>
+        <label for="nom" class="block font-medium">Nom :</label>
+        <input type="text" id="nom" name="nom" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <label for="marque" class="block font-medium">Marque :</label>
+        <input type="text" id="marque" name="marque" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <label for="description" class="block font-medium">Description :</label>
+        <textarea id="description" name="description" required class="w-full border border-gray-300 rounded px-3 py-2"></textarea>
+      </div>
+
+      <div>
+        <label for="prix" class="block font-medium">Prix :</label>
+        <input type="number" id="prix" name="prix" step="0.01" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <label for="photo" class="block font-medium">Photo :</label>
+        <input type="file" id="photo" name="photo" required class="w-full" />
+      </div>
+
+      <div>
+        <label for="ram" class="block font-medium">RAM :</label>
+        <input type="text" id="ram" name="ram" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <label for="rom" class="block font-medium">ROM :</label>
+        <input type="text" id="rom" name="rom" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <label for="ecran" class="block font-medium">Écran :</label>
+        <input type="text" id="ecran" name="ecran" required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <label for="couleurs" class="block font-medium">Couleurs :</label>
+        <input type="text" id="couleurs" name="couleurs" placeholder="Noir, Bleu..." required class="w-full border border-gray-300 rounded px-3 py-2" />
+      </div>
+
+      <div>
+        <input type="submit" value="Ajouter" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 cursor-pointer" />
+      </div>
+    </form>
+  </main>
+</body>
+<footer class="bg-white rounded-lg shadow-sm m-4 dark:bg-gray-800">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="#" class="hover:underline">Groupe1.odc</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact: 33 xxx xxx xxx</a>
+        </li>
+    </ul>
+    </div>
+</footer>
+
+</html>
